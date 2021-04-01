@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation au scroll (Intersection Observer API) - Optimise ton JS ! </title>
+
+  <style>
+
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    div {
+      height: 200vh;
+    }
+
+    .container__1 {
+      background-color: slategray;
+      position: relative;
+    }
+
+    
+    h1 {
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .violet {
+      background-color: violet!important;
+    }
+
+    .salmon {
+      background-color: salmon!important;
+    }
+
+    .container__3 {
+      background-color: mediumseagreen;
+      transition: all .5s ease-in;
+    }
+  </style>
+</head>
+<body>
+  <main class="main">
+    <div class="container__1">
+      <h1>Animation au scroll</h1>
+    </div>
+    <div class="container__3"></div>
+  </main>
+
+  <script src="./index.js"></script>
+</body>
+</html>
